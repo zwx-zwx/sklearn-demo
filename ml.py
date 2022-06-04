@@ -84,7 +84,7 @@ def predict_star():
     for i in range(len(p)):
         p[i][-1] = p_y[i]
     p = p[:, [0, -1]]
-    np.savetxt("predict_star_level.txt", p, fmt='%s')
+    np.savetxt("39_star.csv", p, fmt='%s')
 
 
 def predict_credit():
@@ -120,7 +120,7 @@ def predict_credit():
     for i in range(len(p)):
         p[i][-1] = p_y[i]
     p = p[:, [0, -1]]
-    np.savetxt("predict_credit_level.txt", p, fmt='%s')
+    np.savetxt("39_credit.csv", p, fmt='%s')
 
 
 if __name__ == '__main__':
